@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
 
     <div class="container">
         <h2>Student Registration Form</h2>
 
-        <form action="process_registration.php" method="POST">
+        <form action="/" method="POST">
             <label for="studentName">Student Name:</label>
             <input type="text" id="studentName" name="studentName" required>
 
